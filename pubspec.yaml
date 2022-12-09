@@ -40,6 +40,12 @@ dependencies:
   lottie: ^2.0.0
   build_runner: ^2.3.2
   mobx: ^2.1.3
+  dio: ^4.0.6
+  json_serializable: ^6.5.4
+  json_annotation: ^4.7.0
+  bloc: ^8.1.0
+  flutter_bloc: ^8.1.1
+  shimmer: ^2.0.0
 
 dev_dependencies:
   flutter_test:

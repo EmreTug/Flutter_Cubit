@@ -12,11 +12,16 @@ class SplashView extends StatefulWidget {
 
 class _SplashViewState extends State<SplashView> {
   @override
-  void initState() async {
-   await Future.delayed(Duration(seconds: 3));
-
+  void initState() {
+    Future.microtask(() async {
+      await Future.delayed(Duration(seconds: 3));
+      Navigator.pushAndRemoveUntil(
+          context, MaterialPageRoute(builder: (context) =>
+           HomeView()),(route) => false,);
+    });
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Container(
