@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../../home/homepage/view/home_view.dart';
+import '../../home/homepage/view/home_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -14,7 +14,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     Future.microtask(() async {
-      await Future.delayed(Duration(seconds: 3));
+      await Future.delayed(const Duration(seconds: 3));
       Navigator.pushAndRemoveUntil(
           context, MaterialPageRoute(builder: (context) =>
            HomeView()),(route) => false,);
